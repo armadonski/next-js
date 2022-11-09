@@ -12,8 +12,7 @@ class MyDocument extends Document {
         </head>
         <body>
           <div id={"globalLoader"}>
-            <div className="loader">
-            </div>
+            <div className="loader"></div>
           </div>
           <Main />
           <NextScript />
