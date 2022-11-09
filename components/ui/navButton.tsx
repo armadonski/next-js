@@ -9,10 +9,17 @@ export default function NavButton(props) {
     delay: Math.floor(Math.random() * 500),
   });
 
+  const onClickHandler = () => {
+    props.goTo();
+    if (props.closeDrawer) {
+      props.closeDrawer();
+    }
+  };
+
   return (
     <animated.a
       style={navStyle}
-      onClick={props.goTo}
+      onClick={onClickHandler}
       className={buttonStyles.join(" ")}
       href={props.link}
     >

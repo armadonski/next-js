@@ -1,0 +1,9 @@
+.mainNav {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .mainNav {
+    display: none;
+  }
+}

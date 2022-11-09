@@ -39,7 +39,6 @@ const Home: NextPage = () => {
           <Navbar buttons={sectionTitles} goTo={goToHandler} />
         </nav>
       </header>
-
       <main>
         <div className={styles.content}>
           <div className={styles.verticalNav}>

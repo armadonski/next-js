@@ -3,3 +3,9 @@
   justify-content: space-between;
   padding: 1rem 2rem 1rem 2rem;
 }
+
+@media (max-width: 1000px) {
+  .navbarContainer {
+    justify-content: space-around;
+  }
+}
