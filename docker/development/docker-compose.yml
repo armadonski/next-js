@@ -1,0 +1,15 @@
+services:
+  node:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    volumes:
+      - "../../.:/app"
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    links:
+      - node
+    ports:
+      - "80:80"

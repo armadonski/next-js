@@ -1,0 +1,20 @@
+.button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #00adb5;
+  transition: 1s;
+}
+
+.textColored {
+  color: #00adb5;
+  padding-right: 0.5rem;
+}
+
+.border {
+  border: solid;
+  border-radius: 0.4rem;
+  color: #00adb5;
+}

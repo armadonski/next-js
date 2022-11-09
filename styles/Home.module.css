@@ -1,0 +1,37 @@
+.text {
+  color: #ccd6f6;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+  /* background-color: rgba(10, 25, 47, 0.85); */
+  backdrop-filter: blur(10px);
+  padding: 0 50px;
+}
+
+.verticalNav {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+.verticalLine {
+  display: block;
+  width: 1px;
+  height: 8rem;
+  margin: 0px auto;
+  background-color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
