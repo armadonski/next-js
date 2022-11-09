@@ -8,7 +8,7 @@ import sections from "../content/content.json";
 import whoami from "../content/whoami.json";
 import WhoAmI from "../components/ui/nav/whoami";
 import Content from "../components/ui/content/content";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 
 const Home: NextPage = () => {
@@ -18,6 +18,13 @@ const Home: NextPage = () => {
   const goToHandler = (key) => {
     parallax.current.scrollTo(key + 1);
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const loader = document.getElementById("globalLoader");
+      if (loader) loader.style.display = "none";
+    }
+  }, []);
 
   return (
     <div>
