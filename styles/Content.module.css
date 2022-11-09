@@ -18,3 +18,13 @@
   width: 100%;
   padding: 10rem;
 }
+
+@media (max-width: 1000px) {
+  .title h1{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+}

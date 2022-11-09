@@ -6,6 +6,6 @@
 
 @media (max-width: 1000px) {
   .navbarContainer {
-    justify-content: space-around;
+    padding: 0;
   }
 }
