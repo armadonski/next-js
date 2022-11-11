@@ -7,10 +7,6 @@ export default function ContentItems(props) {
     props.items[Object.keys(props.items)[0]]
   );
 
-  useEffect(() => {
-    console.log(itemList);
-  }, []);
-
   const getItemListHandler = (key) => {
     const items = props.items[Object.keys(props.items)[key]];
 
@@ -21,7 +17,7 @@ export default function ContentItems(props) {
     <div className={styles.list}>
       <div className={styles.navList}>
         {Object.keys(props.items).map((item, key) => (
-          <div className={styles.listItem} key={key}>
+          <div className={styles.listButtons} key={key}>
             <NavButton goTo={() => getItemListHandler(key)} key={key}>
               {item}
             </NavButton>
@@ -38,7 +34,9 @@ export default function ContentItems(props) {
 
                 return (
                   <div key={key}>
-                    {item.title} - {item.date}
+                    <div>
+                      {item.title} - {item.date}
+                    </div>
                     {bullets}
                   </div>
                 );

@@ -5,7 +5,6 @@
   },
   "Experience": {
     "title": "Where I've worked",
-    "description": "lots of experience",
     "items": {
       "eMag": [
         {
@@ -34,7 +33,7 @@
           ]
         }
       ],
-      "Electronic Arts": [
+      "EA Games": [
         {
           "title": "QA Test",
           "date": "May - June",

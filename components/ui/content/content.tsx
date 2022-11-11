@@ -1,6 +1,5 @@
 import styles from "../../../styles/Content.module.css";
 import { animated, useSpring } from "react-spring";
-import { useEffect, useState } from "react";
 import ContentItems from "./contentItems";
 
 export default function Content(props) {

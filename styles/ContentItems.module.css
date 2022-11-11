@@ -1,16 +1,15 @@
 .list {
-  padding: 0.3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.listItem {
+.listButtons {
   padding: 0.5rem;
   border-left: 0.1rem solid #37adb5;
 }
 
-.listItem:hover {
+.listButton:hover {
   background-color: #00484c;
 }
 
@@ -19,4 +18,34 @@
   width: 75%;
   display: flex;
   flex-direction: column;
+}
+
+.bullets > ul {
+  margin: 0;
+}
+
+.bulletTitle {
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .navList {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 0.1rem solid #37adb5;
+  }
+  .bullets {
+    padding: 1rem 0;
+  }
+
+  .listButtons {
+    border: none;
+    align-items: center;
+  }
+
+  .list {
+    flex-direction: column;
+  }
 }
