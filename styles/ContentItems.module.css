@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .listItem {
@@ -16,7 +15,7 @@
 }
 
 .bullets {
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   width: 75%;
   display: flex;
   flex-direction: column;

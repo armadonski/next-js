@@ -7,30 +7,43 @@
     "title": "Where I've worked",
     "description": "lots of experience",
     "items": {
-      "eMag": {
-        "title": "PHP Developer",
-        "date": "May - June",
-        "bullets": [
-          "Configured packages, servers, monitoring tools.",
-          "Updated existing applications on older Symfony framework to newer versions (from Sf 3 to Sf 4, Sf 4 to Sf 5)",
-          "Implemented different functionalities in applications and services",
-          "Created and updated documentation for new and old applications and services"
-        ]
-      },
-      "Ubisoft": {
-        "title": "QA Tester",
-        "date": "May - June",
-        "bullets": [
-          "Creating test plans and test cases.",
-          "Performing tests against builds and test procedures.",
-          "Designing and implementing automated test suites in Codeception.",
-          "Identify, analyze, and document issues resulted from running the automated test scripts.",
-          "Maintain automation tests.",
-          "Run tests, analyze results and report bugs found by the tests.",
-          "Experience and working with:"
-        ]
-      },
-      "Electronic Arts": {}
+      "eMag": [
+        {
+          "title": "PHP Developer",
+          "date": "May - June",
+          "bullets": [
+            "Configured packages, servers, monitoring tools.",
+            "Updated existing applications on older Symfony framework to newer versions (from Sf 3 to Sf 4, Sf 4 to Sf 5)",
+            "Implemented different functionalities in applications and services",
+            "Created and updated documentation for new and old applications and services"
+          ]
+        }
+      ],
+      "Ubisoft": [
+        {
+          "title": "QA Tester",
+          "date": "May - June",
+          "bullets": [
+            "Creating test plans and test cases.",
+            "Performing tests against builds and test procedures.",
+            "Designing and implementing automated test suites in Codeception.",
+            "Identify, analyze, and document issues resulted from running the automated test scripts.",
+            "Maintain automation tests.",
+            "Run tests, analyze results and report bugs found by the tests.",
+            "Experience and working with:"
+          ]
+        }
+      ],
+      "Electronic Arts": [
+        {
+          "title": "QA Test",
+          "date": "May - June",
+          "bullets": [
+            "Tested on 3 platforms that were available on the moment and gained knowledge about testing methodologies related to each one. (PC, PS3, Xbox360)",
+            "Improved team skills and communication by being part of teams that tested features requiring a large number of testers (Battlefield 3 – 64 players on PC, 32 on PS3 and Xbox 360)."
+          ]
+        }
+      ]
     }
   },
   "Contact": {

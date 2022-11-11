@@ -7,7 +7,9 @@ export default function ContentItems(props) {
     props.items[Object.keys(props.items)[0]]
   );
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    console.log(itemList);
+  }, []);
 
   const getItemListHandler = (key) => {
     const items = props.items[Object.keys(props.items)[key]];
@@ -27,16 +29,22 @@ export default function ContentItems(props) {
         ))}
       </div>
       <div className={styles.bullets}>
-        <div>{itemList.title} - {itemList.date}</div>
-        <div className={styles.navList}>
-          <ul>
-            {itemList.bullets
-              ? itemList.bullets.map((item, key) => {
-                  return <li key={key}>{item}</li>;
-                })
-              : null}
-          </ul>
-        </div>
+        <ul>
+          {itemList.length
+            ? itemList.map((item, key) => {
+                const bullets = item.bullets.map((bullet, key) => {
+                  return <li key={key}>{bullet}</li>;
+                });
+
+                return (
+                  <div key={key}>
+                    {item.title} - {item.date}
+                    {bullets}
+                  </div>
+                );
+              })
+            : null}
+        </ul>
       </div>
     </div>
   );
