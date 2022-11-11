@@ -1,5 +1,5 @@
 import NavbarContainer from "../../hoc/navbarContainer";
-import Logo from "./logo";
+import Logo from "../logo/logo";
 import HorizontalNav from "./horizontalNav";
 import Drawer from "./drawer";
 

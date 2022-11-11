@@ -1,0 +1,23 @@
+.list {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.listItem {
+  padding: 0.5rem;
+  border-left: 0.1rem solid #37adb5;
+}
+
+.listItem:hover {
+  background-color: #00484c;
+}
+
+.bullets {
+  padding: 0.5rem 1rem;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}

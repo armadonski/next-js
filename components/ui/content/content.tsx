@@ -1,5 +1,7 @@
 import styles from "../../../styles/Content.module.css";
 import { animated, useSpring } from "react-spring";
+import { useEffect, useState } from "react";
+import ContentItems from "./contentItems";
 
 export default function Content(props) {
   const navStyle = useSpring({
@@ -9,7 +11,7 @@ export default function Content(props) {
   });
 
   return (
-    <animated.div style={navStyle}>
+    <animated.div className={styles.content} style={navStyle}>
       <div className={styles.title}>
         <h1>
           <span className="coloredText">0{props.number}</span>. {props.title}
@@ -17,6 +19,7 @@ export default function Content(props) {
         <div className={`${styles.horizontalLine} lineColor`}></div>
       </div>
       {props.children}
+      {props.items ? <ContentItems items={props.items} /> : null}
     </animated.div>
   );
 }
