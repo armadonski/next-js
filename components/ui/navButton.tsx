@@ -2,7 +2,12 @@ import { animated, useSpring } from "react-spring";
 import styles from "../../styles/Button.module.css";
 
 export default function NavButton(props) {
-  const buttonStyles = [styles.button, props.border ? styles.border : null];
+  const buttonStyles = [
+    styles.button,
+    props.border ? styles.border : null,
+    props.active ? styles.activeButton : null,
+  ];
+
   const navStyle = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },

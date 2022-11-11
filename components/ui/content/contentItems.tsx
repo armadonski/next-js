@@ -1,14 +1,24 @@
 import NavButton from "../navButton";
 import styles from "../../../styles/ContentItems.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { animated, useSpring } from "react-spring";
 
 export default function ContentItems(props) {
   const [itemList, setItemList] = useState(
     props.items[Object.keys(props.items)[0]]
   );
 
+  const [activeButton, setActiveButton] = useState(0);
+
+  const listStyleAnimation = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: Math.floor(Math.random() * 500),
+  });
+
   const getItemListHandler = (key) => {
     const items = props.items[Object.keys(props.items)[key]];
+    setActiveButton(key);
 
     setItemList(items);
   };
@@ -18,7 +28,11 @@ export default function ContentItems(props) {
       <div className={styles.navList}>
         {Object.keys(props.items).map((item, key) => (
           <div className={styles.listButtons} key={key}>
-            <NavButton goTo={() => getItemListHandler(key)} key={key}>
+            <NavButton
+              active={activeButton === key}
+              goTo={() => getItemListHandler(key)}
+              key={key}
+            >
               {item}
             </NavButton>
           </div>
