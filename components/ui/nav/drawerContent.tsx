@@ -16,11 +16,7 @@ export default function DrawerContent(props) {
           </NavButton>
         </div>
       ))}
-      <NavButton
-        border
-        link="http://www.google.ro"
-        closeDrawer={props.closeDrawer}
-      >
+      <NavButton border link="/resume.pdf" closeDrawer={props.closeDrawer}>
         <div style={{ textAlign: "center" }}>Resume</div>
       </NavButton>
     </div>

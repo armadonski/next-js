@@ -9,38 +9,46 @@
       "eMag": [
         {
           "title": "PHP Developer",
-          "date": "May - June",
+          "date": "September 2019 - Present",
           "bullets": [
-            "Configured packages, servers, monitoring tools.",
-            "Updated existing applications on older Symfony framework to newer versions (from Sf 3 to Sf 4, Sf 4 to Sf 5)",
-            "Implemented different functionalities in applications and services",
-            "Created and updated documentation for new and old applications and services"
+            "Written robust and performant code for a different internal projects",
+            "Worked with PHP Symfony framework for backend development, Javascript, HTML, CSS for front-end functionalities",
+            "Used Docker to containerize several applications and Kubernetes to deploy them on internal cloud infrastructure",
+            "Created make, bash scripts and automated deployment pipelines in order to deploy applications in production environment",
+            "Analyzed and designed architectural documentations for upcoming projects"
+          ]
+        },
+        {
+          "title": "QA Engineer",
+          "date": "August 2016 - September 2019",
+          "bullets": [
+            "Designed Test Plans and Test cases",
+            "Reported defects during test execution",
+            "Implemented automated test suites in Codeception"
           ]
         }
       ],
       "Ubisoft": [
         {
-          "title": "QA Tester",
-          "date": "May - June",
+          "title": "Dev Tester",
+          "date": "January 2016 - August 2016",
           "bullets": [
-            "Creating test plans and test cases.",
-            "Performing tests against builds and test procedures.",
-            "Designing and implementing automated test suites in Codeception.",
-            "Identify, analyze, and document issues resulted from running the automated test scripts.",
-            "Maintain automation tests.",
-            "Run tests, analyze results and report bugs found by the tests.",
-            "Experience and working with:"
+            "Designed Test Plans and Test cases",
+            "Close communication with the developers during all stages of development life cycle",
+            "Documented tests, defects, functionalities."
           ]
+        },
+        {
+          "title": "QC Tester",
+          "date": "July 2013 - January 2016",
+          "bullets": []
         }
       ],
       "EA Games": [
         {
-          "title": "QA Test",
-          "date": "May - June",
-          "bullets": [
-            "Tested on 3 platforms that were available on the moment and gained knowledge about testing methodologies related to each one. (PC, PS3, Xbox360)",
-            "Improved team skills and communication by being part of teams that tested features requiring a large number of testers (Battlefield 3 – 64 players on PC, 32 on PS3 and Xbox 360)."
-          ]
+          "title": "QA Tester",
+          "date": "June 2012 - July 2013",
+          "bullets": []
         }
       ]
     }

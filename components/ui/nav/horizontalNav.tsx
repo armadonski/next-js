@@ -13,7 +13,7 @@ export default function HorizontalNav(props) {
           {item}
         </NavButton>
       ))}
-      <NavButton border link="http://www.google.ro">
+      <NavButton border link="/resume.pdf">
         <span>Resume</span>
       </NavButton>
     </div>
