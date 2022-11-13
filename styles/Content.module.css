@@ -1,19 +1,8 @@
 .title {
   display: flex;
-  justify-content: space-around;
-}
-
-.horizontalLine {
-  display: block;
-  width: 20rem;
-  height: 1px;
-  margin: 0px auto;
-  align-self: center;
-  margin-left: 0.5rem;
-}
-
-.content {
-  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 @media (max-width: 1000px) {

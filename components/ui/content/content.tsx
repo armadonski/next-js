@@ -2,7 +2,12 @@ import styles from "../../../styles/Content.module.css";
 import { animated, useSpring } from "react-spring";
 import ContentItems from "./contentItems";
 
-export default function Content(props) {
+export default function Content(props: {
+  number: string | number;
+  title: string;
+  children: any;
+  items: object | undefined;
+}) {
   const navStyle = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
@@ -15,7 +20,6 @@ export default function Content(props) {
         <h1>
           <span className="coloredText">0{props.number}</span>. {props.title}
         </h1>
-        <div className={`${styles.horizontalLine} lineColor`}></div>
       </div>
       {props.children}
       {props.items ? <ContentItems items={props.items} /> : null}

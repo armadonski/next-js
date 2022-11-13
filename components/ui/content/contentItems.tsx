@@ -10,16 +10,10 @@ export default function ContentItems(props) {
 
   const [activeButton, setActiveButton] = useState(0);
 
-  const listStyleAnimation = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    delay: Math.floor(Math.random() * 500),
-  });
-
   const getItemListHandler = (key) => {
     const items = props.items[Object.keys(props.items)[key]];
-    setActiveButton(key);
 
+    setActiveButton(key);
     setItemList(items);
   };
 

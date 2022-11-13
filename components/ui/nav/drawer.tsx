@@ -4,7 +4,11 @@ import styles from "../../../styles/Drawer.module.css";
 import { useState } from "react";
 import DrawerContent from "./drawerContent";
 
-export default function Drawer(props) {
+export default function Drawer(props: {
+  open: boolean;
+  buttons: object;
+  goTo: Function;
+}) {
   const [open, setOpen] = useState(false);
 
   const openDrawerHandler = () => {

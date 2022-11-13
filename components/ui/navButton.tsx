@@ -1,7 +1,15 @@
 import { animated, useSpring } from "react-spring";
 import styles from "../../styles/Button.module.css";
 
-export default function NavButton(props) {
+export default function NavButton(props: {
+  border: boolean;
+  active: boolean;
+  goTo: () => any;
+  closeDrawer: Function;
+  link: string;
+  number: string;
+  children: any;
+}) {
   const buttonStyles = [
     styles.button,
     props.border ? styles.border : null,

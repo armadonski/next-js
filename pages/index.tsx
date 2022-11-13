@@ -45,39 +45,34 @@ const Home: NextPage = () => {
             <VerticalNav />
             <div className={styles.verticalLine}></div>
           </div>
-          <div className={styles.contentSections}>
-            <Parallax ref={parallax} pages={sectionTitles.length + 1}>
-              <ParallaxLayer offset={0} speed={1} key={0}>
-                <ContentSection>
-                  <Content number="0" title="Who Am I?">
-                    <WhoAmI content={whoami} />
-                    <ParallaxLayer
-                      offset={1.3}
-                      speed={-0.3}
-                      style={{ pointerEvents: "none" }}
-                    ></ParallaxLayer>
+          <Parallax ref={parallax} pages={sectionTitles.length + 2}>
+            <ParallaxLayer offset={0} speed={0.2} key={0}>
+              <ContentSection>
+                <Content number="0" title="Who Am I?">
+                  <WhoAmI content={whoami} />
+                  <ParallaxLayer
+                    offset={1.3}
+                    speed={-0.3}
+                    style={{ pointerEvents: "none" }}
+                  ></ParallaxLayer>
+                </Content>
+              </ContentSection>
+            </ParallaxLayer>
+            {sectionTitles.map((section, key) => (
+              <ParallaxLayer offset={key + 1} key={key + 1} speed={0.2}>
+                <ContentSection key={key}>
+                  <Content
+                    number={key + 1}
+                    title={sections[section].title}
+                    items={sections[section].items}
+                  >
+                    {sections[section].description}
                   </Content>
                 </ContentSection>
               </ParallaxLayer>
-              {sectionTitles.map((section, key) => (
-                <ParallaxLayer offset={key + 1} key={key + 1} speed={1}>
-                  <ContentSection key={key}>
-                    <Content
-                      number={key + 1}
-                      title={sections[section].title}
-                      items={sections[section].items}
-                    >
-                      {sections[section].description}
-                    </Content>
-                  </ContentSection>
-                </ParallaxLayer>
-              ))}
-            </Parallax>
-          </div>
+            ))}
+          </Parallax>
         </div>
-        <footer>
-          <div className={styles.footer}>footer footer footer</div>
-        </footer>
       </main>
     </div>
   );
