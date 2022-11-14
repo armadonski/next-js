@@ -11,14 +11,8 @@ export default function VerticalNav(props) {
   return (
     <NavbarContainer>
       <div className={navStyle.join(" ")}>
-        <NavButton link="#">
+        <NavButton link="https://www.linkedin.com/in/armando-gavrila-074530116/">
           <LinkedInIcon />
-        </NavButton>
-        <NavButton link="#">
-          <GitHubIcon />
-        </NavButton>
-        <NavButton link="#">
-          <InstagramIcon />
         </NavButton>
       </div>
     </NavbarContainer>
