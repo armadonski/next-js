@@ -1,5 +1,6 @@
 .bgContainer {
   height: 100%;
+  background-color: #393e46;
 }
 
 .content {
@@ -22,5 +23,8 @@
   }
   .content h1 {
     font-size: 2rem;
+  }
+  .content p {
+    font-size: 0.5rem;
   }
 }

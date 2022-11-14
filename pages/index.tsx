@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                   <WhoAmI content={whoami} />
                   <ParallaxLayer
                     offset={1.3}
-                    speed={-0.3}
+                    speed={0.3}
                     style={{ pointerEvents: "none" }}
                   ></ParallaxLayer>
                 </Content>
@@ -65,6 +65,7 @@ const Home: NextPage = () => {
                     number={key + 1}
                     title={sections[section].title}
                     items={sections[section].items}
+                    buttons={sections[section].buttons}
                   >
                     <p>{sections[section].description}</p>
                   </Content>

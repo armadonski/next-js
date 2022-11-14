@@ -31,7 +31,9 @@ export default function ContentItems(props) {
               </NavButton>
             </div>
           ) : (
-            <div key={key}>{item}</div>
+            <div className={styles.skillHeader} key={key}>
+              {item}
+            </div>
           )
         )}
       </div>

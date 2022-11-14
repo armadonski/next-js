@@ -1,0 +1,7 @@
+.buttons {
+  display: flex;
+  padding-top: 0.5rem;
+}
+.button {
+  padding-right: 0.5rem;
+}

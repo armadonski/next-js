@@ -1,12 +1,14 @@
 import styles from "../../../styles/Content.module.css";
 import { animated, useSpring } from "react-spring";
 import ContentItems from "./contentItems";
+import ContentButtons from "./contentButtons";
 
 export default function Content(props: {
   number: string | number;
   title: string;
   children: any;
   items: object | undefined;
+  buttons: object;
 }) {
   const navStyle = useSpring({
     to: { opacity: 1 },
@@ -23,6 +25,7 @@ export default function Content(props: {
       </div>
       {props.children}
       {props.items ? <ContentItems items={props.items} /> : null}
+      {props.buttons ? <ContentButtons buttons={props.buttons} /> : null}
     </animated.div>
   );
 }

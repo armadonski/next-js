@@ -74,3 +74,12 @@
 .listStyle li {
   padding: 0.2rem 0;
 }
+
+.skillHeader {
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+
+.skillHeader :hover {
+  border-bottom: 0.1rem solid #37adb5;  
+}

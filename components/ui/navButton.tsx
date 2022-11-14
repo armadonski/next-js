@@ -23,7 +23,9 @@ export default function NavButton(props: {
   });
 
   const onClickHandler = () => {
-    props.goTo();
+    if (props.goTo) {
+      props.goTo();
+    }
     if (props.closeDrawer) {
       props.closeDrawer();
     }

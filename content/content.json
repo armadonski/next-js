@@ -1,11 +1,11 @@
 {
   "About": {
     "title": "About me",
-    "description": "I've started out in the gaming industry as a game tester, working towards software testing. Then I got interested in software development and worked a QA Enginner for a while. I got interested in programming while creating automated test which I enjoyed a lot. Fast-forward today I've had the privilege of developing a lot of functionalities and applications in a nice learning environment.",
+    "description": "I've started out in the gaming industry as a game tester, working towards software testing. Then I got interested in programming while creating automated tests, which I enjoyed a lot. Fast-forward today, I've had the privilege of learning a lot by developing functionalities and applications.",
     "items": {
       "nav": false,
       "list": {
-        "A list of technologies I've worked with: ": [
+        "A list of technologies I've worked with": [
           {
             "title": "Programming Languages",
             "bullets": ["PHP, Javascript, HTML, CSS"]
@@ -83,10 +83,17 @@
   },
   "Contact": {
     "title": "Get in touch",
-    "description": "contact me fast"
+    "description": "I am not actively looking for a change right now, but my inbox is always open.",
+    "buttons": [
+      { "display": "E-mail", "link": "mailto: armando.gavrila@gmail.com" },
+      {
+        "display": "LinkedIn",
+        "link": "https://www.linkedin.com/in/armando-gavrila-074530116/"
+      }
+    ]
   },
   "Work": {
     "title": "Some stuff I built",
-    "description": "I built a lot of stuff"
+    "description": "TBD"
   }
 }
