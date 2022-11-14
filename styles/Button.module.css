@@ -2,6 +2,7 @@
   padding: 0.75rem 1rem;
   cursor: pointer;
 }
+
 .activeButton {
   background-color: #00adb5;
   color: black;

@@ -6,7 +6,7 @@ import VerticalNav from "../components/ui/nav/verticalNav";
 import styles from "../styles/Home.module.css";
 import sections from "../content/content.json";
 import whoami from "../content/whoami.json";
-import WhoAmI from "../components/ui/nav/whoami";
+import WhoAmI from "../components/ui/content/whoami";
 import Content from "../components/ui/content/content";
 import React, { useEffect, useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
                     title={sections[section].title}
                     items={sections[section].items}
                   >
-                    {sections[section].description}
+                    <p>{sections[section].description}</p>
                   </Content>
                 </ContentSection>
               </ParallaxLayer>

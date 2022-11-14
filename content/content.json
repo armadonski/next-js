@@ -1,56 +1,84 @@
 {
   "About": {
     "title": "About me",
-    "description": "yes developer, all day developing developing yes"
+    "description": "I've started out in the gaming industry as a game tester, working towards software testing. Then I got interested in software development and worked a QA Enginner for a while. I got interested in programming while creating automated test which I enjoyed a lot. Fast-forward today I've had the privilege of developing a lot of functionalities and applications in a nice learning environment.",
+    "items": {
+      "nav": false,
+      "list": {
+        "A list of technologies I've worked with: ": [
+          {
+            "title": "Programming Languages",
+            "bullets": ["PHP, Javascript, HTML, CSS"]
+          },
+          {
+            "title": "Databases",
+            "bullets": ["Mysql, MongoDB"]
+          },
+          {
+            "title": "Libraries and Frameworks",
+            "bullets": ["Symfony, jQuery, React, Codeception"]
+          },
+          {
+            "title": "Tools and platforms",
+            "bullets": [
+              "Git, Docker, Kubernetes, Helm, Kafka, RabbitMq,Redis, ElasticSearch, Jenkins, Kibana,Sentry, NewRelic, Webpack, Jira"
+            ]
+          }
+        ]
+      }
+    }
   },
   "Experience": {
     "title": "Where I've worked",
     "items": {
-      "eMag": [
-        {
-          "title": "PHP Developer",
-          "date": "September 2019 - Present",
-          "bullets": [
-            "Written robust and performant code for a different internal projects",
-            "Worked with PHP Symfony framework for backend development, Javascript, HTML, CSS for front-end functionalities",
-            "Used Docker to containerize several applications and Kubernetes to deploy them on internal cloud infrastructure",
-            "Created make, bash scripts and automated deployment pipelines in order to deploy applications in production environment",
-            "Analyzed and designed architectural documentations for upcoming projects"
-          ]
-        },
-        {
-          "title": "QA Engineer",
-          "date": "August 2016 - September 2019",
-          "bullets": [
-            "Designed Test Plans and Test cases",
-            "Reported defects during test execution",
-            "Implemented automated test suites in Codeception"
-          ]
-        }
-      ],
-      "Ubisoft": [
-        {
-          "title": "Dev Tester",
-          "date": "January 2016 - August 2016",
-          "bullets": [
-            "Designed Test Plans and Test cases",
-            "Close communication with the developers during all stages of development life cycle",
-            "Documented tests, defects, functionalities."
-          ]
-        },
-        {
-          "title": "QC Tester",
-          "date": "July 2013 - January 2016",
-          "bullets": []
-        }
-      ],
-      "EA Games": [
-        {
-          "title": "QA Tester",
-          "date": "June 2012 - July 2013",
-          "bullets": []
-        }
-      ]
+      "nav": true,
+      "list": {
+        "eMag": [
+          {
+            "title": "PHP Developer",
+            "date": "September 2019 - Present",
+            "bullets": [
+              "Written robust and performant code for different internal projects",
+              "Worked with PHP Symfony framework for backend development, Javascript, HTML, CSS for front-end functionalities",
+              "Used Docker to containerize several applications and Kubernetes to deploy them on internal cloud infrastructure",
+              "Created make, bash scripts and automated deployment pipelines in order to deploy applications in production environment",
+              "Analyzed and designed architectural documentations for upcoming projects"
+            ]
+          },
+          {
+            "title": "QA Engineer",
+            "date": "August 2016 - September 2019",
+            "bullets": [
+              "Designed Test Plans and Test cases",
+              "Reported defects during test execution",
+              "Implemented automated test suites in Codeception"
+            ]
+          }
+        ],
+        "Ubisoft": [
+          {
+            "title": "Dev Tester",
+            "date": "January 2016 - August 2016",
+            "bullets": [
+              "Designed Test Plans and Test cases",
+              "Close communication with the developers during all stages of development life cycle",
+              "Documented tests, defects, functionalities."
+            ]
+          },
+          {
+            "title": "QC Tester",
+            "date": "July 2013 - January 2016",
+            "bullets": []
+          }
+        ],
+        "EA Games": [
+          {
+            "title": "QA Tester",
+            "date": "June 2012 - July 2013",
+            "bullets": []
+          }
+        ]
+      }
     }
   },
   "Contact": {

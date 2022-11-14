@@ -22,6 +22,7 @@
 
 .bullets > ul {
   margin: 0;
+  padding: 0;
 }
 
 .bulletTitle {
@@ -36,6 +37,11 @@
     justify-content: space-around;
     border-bottom: 0.1rem solid #37adb5;
   }
+
+  .list {
+    font-size: 0.65rem;
+  }
+
   .bullets {
     padding: 1rem 0;
   }
@@ -48,4 +54,23 @@
   .list {
     flex-direction: column;
   }
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.date {
+  padding: 0;
+  margin: 0.3rem 0;
+}
+
+.listStyle {
+  list-style: none;
+  padding: 0 0.3rem;
+}
+
+.listStyle li {
+  padding: 0.2rem 0;
 }
