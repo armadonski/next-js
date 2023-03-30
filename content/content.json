@@ -21,7 +21,7 @@
           {
             "title": "Tools and platforms",
             "bullets": [
-              "Git, Docker, Kubernetes, Helm, Kafka, RabbitMq,Redis, ElasticSearch, Jenkins, Kibana,Sentry, NewRelic, Webpack, Jira"
+              "Git, Docker, Kubernetes, Helm, Kafka, RabbitMq, Redis, ElasticSearch, Jenkins, Kibana,Sentry, NewRelic, Webpack, Jira"
             ]
           }
         ]

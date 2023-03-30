@@ -50,11 +50,6 @@ const Home: NextPage = () => {
               <ContentSection>
                 <Content number="0" title="Who Am I?">
                   <WhoAmI content={whoami} />
-                  <ParallaxLayer
-                    offset={1.3}
-                    speed={0.3}
-                    style={{ pointerEvents: "none" }}
-                  ></ParallaxLayer>
                 </Content>
               </ContentSection>
             </ParallaxLayer>
